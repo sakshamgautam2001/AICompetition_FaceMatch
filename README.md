@@ -12,7 +12,7 @@ After the complete execution of "embedding.py" file, we will get the embeddings 
 Now run the "model.py" file which will take "MainDataframe.pickle" embeddings as input and will train the model, the model after training will be saved as "trained_model.h5" file
 
 **Predicting the Results**
-After the model saved as "trained_model.h5" file, run the "predict.py" file, which will take "test.csv" and "trained_model.h5" as input, and will return the results in form of "results.csv" file
+After the model saved as "trained_model.h5" file, run the "predict.py" file, which will take "test.csv" and "trained_model.h5" as input, and will return the results in form of "results.csv" file. **Note that**, this step will take time, as first it will encode all the pairs into embeddings, that is the major component that will take time, the prediction will be done in a very small time.
 
 The model is already trained and saved as "trained_model.h5", so to predict the new set of pairs, the changes have to be made only in the "test.csv" file, and new results will be saved in "results.csv" file.
 
